@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Manage Activity Leaders &amp; Instructors | Khayt Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="images/logo.svg" alt="Khayt Studio logo" width="120" height="70">
+      <span class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="club-offerings.html">Club Offerings</a></li>
+        <li><a href="manager-dashboard.html" class="current">Manager Dashboard</a></li>
+        <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+    <p><a href="index.html">Home</a> &gt; <a href="manager-dashboard.html">Manager Dashboard</a> &gt; Manage Activity Leaders &amp; Instructors</p>
+  </nav>
+
+  <main>
+    <h1>Manage Activity Leaders &amp; Instructors</h1>
+    <p class="page-intro"><em>Manage activity leaders and instructors by adding new members or selecting existing ones to delete.</em></p>
+
+    <div class="manage-panels">
+
+      <section class="panel">
+        <h2>Activity Leaders &amp; Instructors <em class="hint">select members to delete</em></h2>
+        <form action="manage-instructors.html" method="post">
+          <div class="member-list">
+          <div class="member-card">
+            <input type="checkbox" id="del-ghadha" name="delete-member" value="ghadha">
+            <label for="del-ghadha">
+              <img src="images/instructor-placeholder.svg" alt="Photo of Ghadha Aldablan" width="90" height="90">
+              <strong>Ghadha Aldablan</strong>
+              <span class="expertise">Fashion Design</span>
+            </label>
+          </div>
+          <div class="member-card">
+            <input type="checkbox" id="del-lara" name="delete-member" value="lara">
+            <label for="del-lara">
+              <img src="images/instructor-placeholder.svg" alt="Photo of Lara Almani" width="90" height="90">
+              <strong>Lara Almani</strong>
+              <span class="expertise">Styling &amp; Personal Image</span>
+            </label>
+          </div>
+          <div class="member-card">
+            <input type="checkbox" id="del-jouri" name="delete-member" value="jouri">
+            <label for="del-jouri">
+              <img src="images/instructor-placeholder.svg" alt="Photo of Jouri Alsulaiman" width="90" height="90">
+              <strong>Jouri Alsulaiman</strong>
+              <span class="expertise">Textile &amp; Sustainability</span>
+            </label>
+          </div>
+          <div class="member-card">
+            <input type="checkbox" id="del-reema" name="delete-member" value="reema">
+            <label for="del-reema">
+              <img src="images/instructor-placeholder.svg" alt="Photo of Reema Alessa" width="90" height="90">
+              <strong>Reema Alessa</strong>
+              <span class="expertise">Fashion Illustration</span>
+            </label>
+          </div>
+          </div>
+          <p class="form-buttons">
+            <input type="submit" value="Delete Selected" class="btn btn-dark">
+          </p>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Add New Activity Leader / Instructor <em class="hint">fill in the form to add a new member</em></h2>
+        <form class="khayt-form" action="manage-instructors.html" method="post" enctype="multipart/form-data">
+          <p>
+            <label for="member-name">Name *</label>
+            <input type="text" id="member-name" name="member-name" required>
+          </p>
+          <p>
+            <label for="member-photo">Photo *</label>
+            <input type="file" id="member-photo" name="member-photo" accept="image/*" required>
+          </p>
+          <p>
+            <label for="member-dob">Date of Birth *</label>
+            <input type="date" id="member-dob" name="member-dob" required>
+          </p>
+          <p>
+            <label for="member-email">Email *</label>
+            <input type="email" id="member-email" name="member-email" placeholder="name@example.com" required>
+          </p>
+          <p>
+            <label for="member-expertise">Area of Expertise *</label>
+            <select id="member-expertise" name="member-expertise" required>
+              <option value="">-- Select an area --</option>
+              <option value="fashion-design">Fashion Design</option>
+              <option value="styling">Styling &amp; Personal Image</option>
+              <option value="sustainability">Textile &amp; Sustainability</option>
+              <option value="illustration">Fashion Illustration</option>
+              <option value="sewing">Sewing &amp; Tailoring</option>
+            </select>
+          </p>
+          <p>
+            <label for="member-skills">Skills *</label>
+            <textarea id="member-skills" name="member-skills" rows="4" placeholder="E.g. sewing, pattern making, styling..." required></textarea>
+          </p>
+          <p>
+            <label for="member-education">Education *</label>
+            <input type="text" id="member-education" name="member-education" placeholder="E.g. university, degree, certifications..." required>
+          </p>
+          <p class="form-buttons">
+            <input type="reset" value="Cancel" class="btn btn-light">
+            <input type="submit" value="Add" class="btn btn-dark">
+          </p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <section class="footer-col">
+      <h2>Follow Us</h2>
+      <ul class="social">
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://x.com" target="_blank">X</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+    </section>
+    <div class="footer-col footer-brand">
+      <img src="images/logo.svg" alt="Khayt Studio logo" width="120" height="70">
+      <p class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></p>
+      <p><small>Copyright &copy; 2026 Khayt Studio. All rights reserved.</small></p>
+    </div>
+    <section class="footer-col">
+      <h2>Contact Us</h2>
+      <p><a href="mailto:info@khaytstudio.com">info@khaytstudio.com</a></p>
+      <p>Riyadh, Saudi Arabia</p>
+    </section>
+  </footer>
+</body>
+</html>
