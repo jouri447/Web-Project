@@ -282,3 +282,124 @@ main > .khayt-form { max-width: 900px; }
   display: block;
   color: #777777;
 }
+/* About Us */
+
+.about-intro {
+  font-style: italic;
+  color: #555555;
+  max-width: 900px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.team-card {
+  width: 200px;
+  margin: 0 20px 20px 0;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid #c9bdb2;
+  background-color: #ffffff;
+}
+
+.team-card:hover { background-color: #fbf8f5; }
+
+.team-card img {
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+.team-card a {
+  display: block;
+  font-weight: bold;
+}
+
+/* Join Our Team form */
+
+.join-section .khayt-form {
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #c9bdb2;
+}
+
+.join-section .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.join-section .form-row label {
+  flex: 0 0 150px;
+  margin-bottom: 0;
+}
+
+.join-section .form-row input { flex: 1; }
+
+.join-section .form-buttons {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* Instructor Profile */
+
+.profile-card {
+  max-width: 700px;
+  margin: 20px auto;
+  border: 1px solid #c9bdb2;
+}
+
+.profile-name {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: #e4dcd3;
+  border-bottom: 1px solid #c9bdb2;
+}
+
+.profile-body {
+  display: flex;
+  min-height: 260px;
+}
+
+.profile-photo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-right: 1px solid #c9bdb2;
+}
+
+.profile-photo img { border-radius: 50%; }
+
+.profile-details {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.profile-details li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #d9cfc5;
+}
+
+.profile-details li:last-child { border-bottom: none; }
+
+.profile-title { font-weight: bold; }
+
+@media (max-width: 600px) {
+  .profile-body { flex-direction: column; }
+  .profile-photo {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #c9bdb2;
+  }
+}
