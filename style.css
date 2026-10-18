@@ -292,15 +292,16 @@ main > .khayt-form { max-width: 900px; }
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   list-style-type: none;
   margin: 0 0 40px;
-  padding: 0;
+  padding: 0 0 10px;
 }
 
 .team-card {
-  width: 200px;
-  margin: 0 20px 20px 0;
+  flex: 0 0 200px;
+  margin: 0 20px 0 0;
   padding: 20px 10px;
   text-align: center;
   border: 1px solid #c9bdb2;
@@ -348,58 +349,39 @@ main > .khayt-form { max-width: 900px; }
 
 /* Instructor Profile */
 
-.profile-card {
+.profile-table {
+  width: 100%;
   max-width: 700px;
   margin: 20px auto;
+  border-collapse: collapse;
   border: 1px solid #c9bdb2;
 }
 
-.profile-name {
-  margin: 0;
+.profile-table .profile-name {
   padding: 15px;
   text-align: center;
   font-size: 1.3rem;
+  color: #6b4f4f;
   background-color: #e4dcd3;
   border-bottom: 1px solid #c9bdb2;
 }
 
-.profile-body {
-  display: flex;
-  min-height: 260px;
-}
-
-.profile-photo {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border-right: 1px solid #c9bdb2;
-}
-
-.profile-photo img { border-radius: 50%; }
-
-.profile-details {
-  flex: 1;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.profile-details li {
+.profile-table td {
   padding: 12px 15px;
-  border-bottom: 1px solid #d9cfc5;
+  border: 1px solid #d9cfc5;
 }
 
-.profile-details li:last-child { border-bottom: none; }
+.profile-table .profile-photo {
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
 
-.profile-title { font-weight: bold; }
+.profile-table .profile-photo img { border-radius: 50%; }
 
-@media (max-width: 600px) {
-  .profile-body { flex-direction: column; }
-  .profile-photo {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #c9bdb2;
-  }
+.profile-table .profile-title { font-weight: bold; }
+
+.profile-table tbody tr:last-child td {
+  height: 90px;
+  vertical-align: top;
 }
