@@ -3,37 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Khayt Studio Fashion Club | Club Offerings</title>
+  <title>Club Offerings | Khayt Studio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="site-header">
-    <a class="brand" href="home-page.html">
-      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo">
-      <span class="brand-text">KHAYT STUDIO<span class="brand-sub">FASHION CLUB</span></span>
+    <a href="home-page.html" class="brand">
+      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo" width="140" height="70">
+      <span class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
+    <nav class="main-nav">
       <ul>
         <li><a href="home-page.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
-        <li><a class="current" href="club-offerings.html" aria-current="page">Club Offerings</a></li>
+        <li><a href="club-offerings.html" class="current">Club Offerings</a></li>
         <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
         <li><a href="member-dashboard.html">Member Dashboard</a></li>
-        <li class="nav-bell">
-          <a href="member-dashboard.html" aria-label="Notifications">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
-              <path d="M13.7 21a2 2 0 0 1-3.4 0"/>
-            </svg>
-          </a>
-        </li>
       </ul>
     </nav>
   </header>
 
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="home-page.html">Home</a> &gt; Club Offerings
+  <nav class="breadcrumb">
+    <p><a href="home-page.html">Home</a> &gt; Club Offerings</p>
   </nav>
 
   <main class="offerings-page">
@@ -41,20 +33,20 @@
     <h1>Club Offerings</h1>
     <p class="page-intro">Browse all workshops, courses, and experiences.</p>
 
-    <form class="offerings-tools" action="club-offerings.html" method="get" role="search">
-      <label class="visually-hidden" for="offering-search">Search offerings</label>
-      <input type="search" id="offering-search" name="search" placeholder="Search">
+    <form class="offerings-tools" action="club-offerings.html" method="get">
+      <label for="offering-search">Search:</label>
+      <input type="search" id="offering-search" name="search">
 
-      <label class="visually-hidden" for="offering-sort">Sort offerings</label>
+      <label for="offering-sort">Sort by:</label>
       <select id="offering-sort" name="sort">
-        <option value="" selected disabled>Sort by</option>
+        <option value="" selected>Sort by</option>
         <optgroup label="Price">
           <option value="price-asc">Low to High</option>
           <option value="price-desc">High to Low</option>
         </optgroup>
         <optgroup label="Name">
-          <option value="name-asc">A&ndash;Z</option>
-          <option value="name-desc">Z&ndash;A</option>
+          <option value="name-asc">A-Z</option>
+          <option value="name-desc">Z-A</option>
         </optgroup>
       </select>
     </form>
@@ -65,99 +57,99 @@
           <h2>Fashion Illustration Workshop</h2>
           <p class="offering-desc">Sketch your first design in one afternoon.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="100">100 SAR</data></p>
+            <p class="offering-price">100 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Fashion Illustration Workshop"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/sustainable-fashion-course.jpeg" alt="Sustainable fashion course">
-          <h2>Sustainable fashion course</h2>
+          <img src="images/sustainable-fashion-course.jpeg" alt="Sustainable Fashion Course">
+          <h2>Sustainable Fashion Course</h2>
           <p class="offering-desc">Learn to build a wardrobe that lasts.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="1300">1300 SAR</data></p>
+            <p class="offering-price">1300 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Sustainable fashion course"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/styling-and-personal-image.jpeg" alt="Styling and personal image">
-          <h2>Styling and personal image</h2>
+          <img src="images/styling-and-personal-image.jpeg" alt="Styling and Personal Image">
+          <h2>Styling and Personal Image</h2>
           <p class="offering-desc">Find a style that feels like you.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="200">200 SAR</data></p>
+            <p class="offering-price">200 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Styling and personal image"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/fashion-show-experience.jpeg" alt="Fashion show experience">
-          <h2>Fashion show experience</h2>
+          <img src="images/fashion-show-experience.jpeg" alt="Fashion Show Experience">
+          <h2>Fashion Show Experience</h2>
           <p class="offering-desc">Walk the runway and see a show backstage.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="0">0 SAR (free)</data></p>
+            <p class="offering-price">0 SAR (free)</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Fashion show experience"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/textile-and-sustainability.jpeg" alt="Textile and sustainability">
-          <h2>Textile and sustainability</h2>
+          <img src="images/textile-and-sustainability.jpeg" alt="Textile and Sustainability">
+          <h2>Textile and Sustainability</h2>
           <p class="offering-desc">Explore eco-friendly fabrics hands-on.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="250">250 SAR</data></p>
+            <p class="offering-price">250 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Textile and sustainability"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/creative-direction-session.jpeg" alt="Creative direction session">
-          <h2>Creative direction session</h2>
+          <img src="images/creative-direction-session.jpeg" alt="Creative Direction Session">
+          <h2>Creative Direction Session</h2>
           <p class="offering-desc">Learn to art-direct a fashion shoot.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="180">180 SAR</data></p>
+            <p class="offering-price">180 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Creative direction session"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/pattern-making-basics.jpeg" alt="Pattern making basics">
-          <h2>Pattern making basics</h2>
+          <img src="images/pattern-making-basics.jpeg" alt="Pattern Making Basics">
+          <h2>Pattern Making Basics</h2>
           <p class="offering-desc">Turn a sketch into a real garment pattern.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="220">220 SAR</data></p>
+            <p class="offering-price">220 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Pattern making basics"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/fashion-photography-workshop.jpeg" alt="Fashion photography workshop">
-          <h2>Fashion photography workshop</h2>
+          <img src="images/fashion-photography-workshop.jpeg" alt="Fashion Photography Workshop">
+          <h2>Fashion Photography Workshop</h2>
           <p class="offering-desc">Learn to shoot and style a look book.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="260">260 SAR</data></p>
+            <p class="offering-price">260 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Fashion photography workshop"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/sewing-fundamentals.jpeg" alt="Sewing fundamentals">
-          <h2>Sewing fundamentals</h2>
+          <img src="images/sewing-fundamentals.jpeg" alt="Sewing Fundamentals">
+          <h2>Sewing Fundamentals</h2>
           <p class="offering-desc">Hand-stitch your first small project.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="120">120 SAR</data></p>
+            <p class="offering-price">120 SAR</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Sewing fundamentals"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/capsule-wardrobe-planning.jpeg" alt="Capsule wardrobe planning">
-          <h2>Capsule wardrobe planning</h2>
+          <img src="images/capsule-wardrobe-planning.jpeg" alt="Capsule Wardrobe Planning">
+          <h2>Capsule Wardrobe Planning</h2>
           <p class="offering-desc">Build ten outfits from ten pieces.</p>
           <div class="offering-footer">
-            <p class="offering-price"><data value="0">0 SAR (free)</data></p>
+            <p class="offering-price">0 SAR (free)</p>
             <a class="btn btn-light" href="request-to-join-offering.html">Request to join</a>
-            <button class="bookmark-btn" type="button" aria-label="Save Capsule wardrobe planning"></button>
+            <button class="bookmark-btn" type="button">Save</button>
           </div>
         </li>
     </ul>
@@ -165,28 +157,24 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-col">
+    <section class="footer-col">
       <h2>Follow Us</h2>
       <ul class="social">
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-        <li><a href="https://x.com/">X</a></li>
-        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://x.com" target="_blank">X</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
       </ul>
-    </div>
+    </section>
     <div class="footer-col footer-brand">
-      <a class="brand" href="home-page.html">
-        <img src="images/khayt-logo.jpg" alt="Khayt Studio logo">
-        <span class="brand-text">KHAYT STUDIO<span class="brand-sub">FASHION CLUB</span></span>
-      </a>
-      <p><small>&copy; 2026 Khayt Studio. All rights reserved.</small></p>
+      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo" width="140" height="70">
+      <p class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></p>
+      <p><small>Copyright &copy; 2026 Khayt Studio. All rights reserved.</small></p>
     </div>
-    <div class="footer-col">
+    <section class="footer-col">
       <h2>Contact Us</h2>
-      <address>
-        <a href="mailto:info@khaytstudio.com">info@khaytstudio.com</a><br>
-        Riyadh, Saudi Arabia
-      </address>
-    </div>
+      <p><a href="mailto:info@khaytstudio.com">info@khaytstudio.com</a></p>
+      <p>Riyadh, Saudi Arabia</p>
+    </section>
   </footer>
 
 </body>
