@@ -13,7 +13,6 @@ body {
 h1 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 0 0.25em;
 }
@@ -114,10 +113,8 @@ main { padding: 10px 30px 40px; }
   display: inline-block;
   padding: 10px 22px;
   border: 1px solid #6b4f4f;
-  border-radius: 4px;
   font-size: 1rem;
   text-decoration: none;
-  cursor: pointer;
 }
 
 a.btn-dark, .btn-dark {
@@ -160,8 +157,7 @@ a.btn-light, .btn-light {
   width: 100%;
   padding: 8px;
   border: 1px solid #c9bdb2;
-  border-radius: 4px;
-  font-family: inherit;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   background-color: #ffffff;
 }
@@ -179,7 +175,6 @@ a.btn-light, .btn-light {
 
 .offerings-table {
   width: 100%;
-  border-collapse: collapse;
   border: 1px solid #d9cfc5;
 }
 
@@ -226,8 +221,7 @@ main > .khayt-form { max-width: 900px; }
 }
 
 .panel {
-  flex: 1;
-  min-width: 320px;
+  flex: 1 1 320px;
   margin: 0 10px 20px 0;
   padding: 20px;
   border: 1px solid #c9bdb2;
@@ -241,8 +235,8 @@ main > .khayt-form { max-width: 900px; }
 .member-list {
   display: flex;
   flex-wrap: wrap;
-  max-height: 460px;
-  overflow-y: auto;
+  height: 460px;
+  overflow: auto;
 }
 
 .member-card {
@@ -267,13 +261,11 @@ main > .khayt-form { max-width: 900px; }
 
 .member-card label {
   display: block;
-  cursor: pointer;
 }
 
 .member-card img {
   display: block;
   margin: 0 auto 10px;
-  border-radius: 50%;
 }
 
 .member-card strong { display: block; }

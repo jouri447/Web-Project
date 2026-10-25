@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Add New Offering | Khayt Studio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html" class="brand">
-      <img src="images/logo.svg" alt="Khayt Studio logo" width="120" height="70">
+    <a href="home-page.html" class="brand">
+      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo" width="140" height="70">
       <span class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></span>
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="home-page.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="club-offerings.html">Club Offerings</a></li>
         <li><a href="manager-dashboard.html" class="current">Manager Dashboard</a></li>
@@ -23,25 +23,25 @@
   </header>
 
   <nav class="breadcrumb">
-    <p><a href="index.html">Home</a> &gt; <a href="manager-dashboard.html">Club Manager Dashboard</a> &gt; Add New Offering</p>
+    <p><a href="home-page.html">Home</a> &gt; <a href="manager-dashboard.html">Club Manager Dashboard</a> &gt; Add New Offering</p>
   </nav>
 
   <main>
-    <h1>Add New Offering</h1>
+    <h1>ADD NEW OFFERING</h1>
     <p class="page-intro"><em>Create a new workshop, class, or experience.</em></p>
 
     <form class="khayt-form" action="manager-dashboard.html" method="post" enctype="multipart/form-data">
       <p>
         <label for="offering-name">Offering Name</label>
-        <input type="text" id="offering-name" name="offering-name" required>
+        <input type="text" id="offering-name" name="offering-name">
       </p>
       <p>
         <label for="offering-description">Description</label>
-        <textarea id="offering-description" name="offering-description" rows="4" required></textarea>
+        <textarea id="offering-description" name="offering-description" rows="4"></textarea>
       </p>
       <p>
         <label for="offering-price">Price or Registration Fee (SAR) <em class="hint">Enter 0 for free offerings.</em></label>
-        <input type="number" id="offering-price" name="offering-price" min="0" value="0" required>
+        <input type="number" id="offering-price" name="offering-price" value="0">
       </p>
       <p>
         <label for="offering-date">Date</label>
@@ -59,7 +59,7 @@
       </p>
       <p>
         <label for="offering-image">Upload Image</label>
-        <input type="file" id="offering-image" name="offering-image" accept="image/*" required>
+        <input type="file" id="offering-image" name="offering-image" accept="image/*">
       </p>
       <p class="form-buttons">
         <input type="submit" value="Submit" class="btn btn-dark">
@@ -78,7 +78,7 @@
       </ul>
     </section>
     <div class="footer-col footer-brand">
-      <img src="images/logo.svg" alt="Khayt Studio logo" width="120" height="70">
+      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo" width="140" height="70">
       <p class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></p>
       <p><small>Copyright &copy; 2026 Khayt Studio. All rights reserved.</small></p>
     </div>
