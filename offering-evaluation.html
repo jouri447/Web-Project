@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Offering Evaluation | Khayt Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo" width="120" height="70">
+      <span class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home-page.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="club-offerings.html">Club Offerings</a></li>
+        <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+        <li><a href="member-dashboard.html" class="current">Member Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="breadcrumb">
+
+        <p>
+
+            <a href="home-page.html">Home</a> &gt;
+
+            <a href="member-dashboard.html">Member Dashboard</a> &gt;
+
+            Offering Evaluation
+
+        </p>
+
+    </nav>
+
+    <section class="evaluation-page">
+
+        <h1>Offering Evaluation</h1>
+
+        <p class="evaluation-intro">
+
+            <em>Tell us about your experience!</em>
+
+        </p>
+
+        <form class="evaluation-form" action="#" method="post">
+              <div class="evaluation-row">
+
+                <label for="completed-offering">
+
+                    Select a Completed Offering *
+
+                </label>
+
+                <select id="offering" name="offering" required>
+              <option value="">-- Select an offering --</option>
+              <option value="fashion-illustration">Fashion Illustration Workshop</option>
+              <option value="sustainable-fashion">Sustainable Fashion Course</option>
+              <option value="fashion-show">Fashion Show Experience</option>
+            </select>
+
+            </div>
+
+            <!-- Rating -->
+
+            <fieldset class="evaluation-row rating-row">
+
+                <legend>Rating *</legend>
+
+                <div class="star-rating">
+
+                    <input type="radio" id="star5" name="rating" value="5" required>
+
+                    <label for="star5" title="5 stars">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+
+                    <label for="star4" title="4 stars">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+
+                    <label for="star3" title="3 stars">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+
+                    <label for="star2" title="2 stars">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+
+                    <label for="star1" title="1 star">★</label>
+
+                </div>
+
+            </fieldset>
+
+             <div class="evaluation-row">
+
+                <label for="written-feedback">
+
+                    Written Feedback *
+
+                </label>
+
+                <textarea
+
+                    id="written-feedback"
+
+                    name="written-feedback"
+
+                    rows="6"
+
+                    placeholder="Any additional notes..."
+
+                    required></textarea>
+
+            </div>
+
+                 <div class="evaluation-buttons">
+
+                <button type="submit" class="evaluation-submit">
+
+                    Submit
+
+                </button>
+
+                <button type="reset" class="evaluation-cancel">
+
+                    Cancel
+
+                </button>
+
+            </div>
+        </form>
+    </section>
+</main>
+                    
+
+  <footer class="site-footer">
+    <section class="footer-col">
+      <h2>Follow Us</h2>
+      <ul class="social">
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://x.com" target="_blank">X</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+    </section>
+    <div class="footer-col footer-brand">
+      <img src="images/khayt-logo.jpg" alt="Khayt Studio logo" width="120" height="70">
+      <p class="brand-text">KHAYT STUDIO <span class="brand-sub">FASHION CLUB</span></p>
+      <p><small>Copyright &copy; 2026 Khayt Studio. All rights reserved.</small></p>
+    </div>
+    <section class="footer-col">
+      <h2>Contact Us</h2>
+      <p><a href="mailto:info@khaytstudio.com">info@khaytstudio.com</a></p>
+      <p>Riyadh, Saudi Arabia</p>
+    </section>
+  </footer>
+</body>
+</html>
