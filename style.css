@@ -213,6 +213,7 @@ a.btn-light, .btn-light {
 
 .offerings-table {
     width: 100%;
+    border-spacing: 0;
     border: 1px solid #d9c6b5;
     border-radius: 8px;
     background-color: #fffdf9;
@@ -229,6 +230,9 @@ a.btn-light, .btn-light {
     padding: 15px 12px;
     border-top: 1px solid #d9c6b5;
 }
+
+.offerings-table th + th,
+.offerings-table td + td { border-left: 1px solid #d9c6b5; }
 
 .offerings-table tbody tr:hover { background-color: #fbf8f5; }
 
@@ -275,6 +279,11 @@ main > .khayt-form { width: 100%; }
   border-bottom: 1px solid #d9cfc5;
 }
 
+.panel h2 .hint {
+  display: block;
+  margin: 4px 0 0;
+}
+
 .member-list {
   display: flex;
   flex-wrap: wrap;
@@ -312,6 +321,24 @@ main > .khayt-form { width: 100%; }
 .member-card img {
   display: block;
   margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+/* Add form in two columns: Name | Photo, DOB | Email, Area | Skills, Education */
+.panel .khayt-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.panel .khayt-form p {
+  width: 48%;
+  margin: 0 0 15px;
+}
+
+.panel .khayt-form p.form-buttons {
+  width: 100%;
+  margin-top: 5px;
 }
 
 .member-card strong { display: block; }
@@ -1148,4 +1175,78 @@ main > .khayt-form { width: 100%; }
         width: 100%;
     }
 
+}
+
+/* Additions after the Phase 1 wireframe review and Phase 2 requirements.
+   The sections above are kept as each team member wrote them. */
+
+/* Header bell and footer icons (all pages) */
+.main-nav .nav-bell img { display: block; }
+
+.social img { display: block; }
+
+.footer-brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-brand .brand-text {
+  margin: 0 0 0 15px;
+  text-align: left;
+}
+
+.footer-brand p:last-child { flex: 0 0 100%; }
+
+.contact-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.breadcrumb { max-width: 1200px; }
+
+/* About Us: the team list must scroll horizontally (Phase 2 requirement) */
+.team-list {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+/* Club Offerings: size of the bookmark icon */
+.offering-card .bookmark-btn img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/* Home: Style of the Month slider, the dots follow the looks */
+.style-month { min-width: 0; }
+
+.style-slides { overflow: hidden; }
+
+.style-track {
+  display: flex;
+  width: 400%;
+  animation: style-slide 16s infinite;
+}
+
+.style-track .style-card { flex: 0 0 25%; }
+
+@keyframes style-slide {
+  0%, 22% { transform: translateX(0); }
+  25%, 47% { transform: translateX(-25%); }
+  50%, 72% { transform: translateX(-50%); }
+  75%, 97% { transform: translateX(-75%); }
+  100% { transform: translateX(0); }
+}
+
+.dot { animation: dot-on 16s infinite; }
+.dot:nth-child(2) { animation-delay: 4s; }
+.dot:nth-child(3) { animation-delay: 8s; }
+.dot:nth-child(4) { animation-delay: 12s; }
+
+@keyframes dot-on {
+  0%, 24% { background-color: #2b2b2b; }
+  25%, 100% { background-color: #ffffff; }
 }
