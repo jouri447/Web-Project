@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Club Offerings | Khayt Studio</title>
+  <title>Khayt Studio Fashion Club | Club Offerings</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,20 +34,20 @@
     <h1>Club Offerings</h1>
     <p class="page-intro">Browse all workshops, courses, and experiences.</p>
 
-    <form class="offerings-tools" action="club-offerings.html" method="get">
-      <label for="offering-search">Search:</label>
-      <input type="search" id="offering-search" name="search">
+    <form class="offerings-tools" action="club-offerings.html" method="get" role="search">
+      <label class="visually-hidden" for="offering-search">Search offerings</label>
+      <input type="search" id="offering-search" name="search" placeholder="Search">
 
-      <label for="offering-sort">Sort by:</label>
+      <label class="visually-hidden" for="offering-sort">Sort offerings</label>
       <select id="offering-sort" name="sort">
-        <option value="" selected>Sort by</option>
+        <option value="" selected disabled>Sort by</option>
         <optgroup label="Price">
           <option value="price-asc">Low to High</option>
           <option value="price-desc">High to Low</option>
         </optgroup>
         <optgroup label="Name">
-          <option value="name-asc">A-Z</option>
-          <option value="name-desc">Z-A</option>
+          <option value="name-asc">A&ndash;Z</option>
+          <option value="name-desc">Z&ndash;A</option>
         </optgroup>
       </select>
     </form>
@@ -58,97 +58,97 @@
           <h2>Fashion Illustration Workshop</h2>
           <p class="offering-desc">Sketch your first design in one afternoon.</p>
           <div class="offering-footer">
-            <p class="offering-price">100 SAR</p>
+            <p class="offering-price"><data value="100">100 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/sustainable-fashion-course.jpeg" alt="Sustainable Fashion Course">
-          <h2>Sustainable Fashion Course</h2>
+          <img src="images/sustainable-fashion-course.jpeg" alt="Sustainable fashion course">
+          <h2>Sustainable fashion course</h2>
           <p class="offering-desc">Learn to build a wardrobe that lasts.</p>
           <div class="offering-footer">
-            <p class="offering-price">1300 SAR</p>
+            <p class="offering-price"><data value="1300">1300 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/styling-and-personal-image.jpeg" alt="Styling and Personal Image">
-          <h2>Styling and Personal Image</h2>
+          <img src="images/styling-and-personal-image.jpeg" alt="Styling and personal image">
+          <h2>Styling and personal image</h2>
           <p class="offering-desc">Find a style that feels like you.</p>
           <div class="offering-footer">
-            <p class="offering-price">200 SAR</p>
+            <p class="offering-price"><data value="200">200 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/fashion-show-experience.jpeg" alt="Fashion Show Experience">
-          <h2>Fashion Show Experience</h2>
+          <img src="images/fashion-show-experience.jpeg" alt="Fashion show experience">
+          <h2>Fashion show experience</h2>
           <p class="offering-desc">Walk the runway and see a show backstage.</p>
           <div class="offering-footer">
-            <p class="offering-price">0 SAR (free)</p>
+            <p class="offering-price"><data value="0">0 SAR (free)</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/textile-and-sustainability.jpeg" alt="Textile and Sustainability">
-          <h2>Textile and Sustainability</h2>
+          <img src="images/textile-and-sustainability.jpeg" alt="Textile and sustainability">
+          <h2>Textile and sustainability</h2>
           <p class="offering-desc">Explore eco-friendly fabrics hands-on.</p>
           <div class="offering-footer">
-            <p class="offering-price">250 SAR</p>
+            <p class="offering-price"><data value="250">250 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/creative-direction-session.jpeg" alt="Creative Direction Session">
-          <h2>Creative Direction Session</h2>
+          <img src="images/creative-direction-session.jpeg" alt="Creative direction session">
+          <h2>Creative direction session</h2>
           <p class="offering-desc">Learn to art-direct a fashion shoot.</p>
           <div class="offering-footer">
-            <p class="offering-price">180 SAR</p>
+            <p class="offering-price"><data value="180">180 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/pattern-making-basics.jpeg" alt="Pattern Making Basics">
-          <h2>Pattern Making Basics</h2>
+          <img src="images/pattern-making-basics.jpeg" alt="Pattern making basics">
+          <h2>Pattern making basics</h2>
           <p class="offering-desc">Turn a sketch into a real garment pattern.</p>
           <div class="offering-footer">
-            <p class="offering-price">220 SAR</p>
+            <p class="offering-price"><data value="220">220 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/fashion-photography-workshop.jpeg" alt="Fashion Photography Workshop">
-          <h2>Fashion Photography Workshop</h2>
+          <img src="images/fashion-photography-workshop.jpeg" alt="Fashion photography workshop">
+          <h2>Fashion photography workshop</h2>
           <p class="offering-desc">Learn to shoot and style a look book.</p>
           <div class="offering-footer">
-            <p class="offering-price">260 SAR</p>
+            <p class="offering-price"><data value="260">260 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/sewing-fundamentals.jpeg" alt="Sewing Fundamentals">
-          <h2>Sewing Fundamentals</h2>
+          <img src="images/sewing-fundamentals.jpeg" alt="Sewing fundamentals">
+          <h2>Sewing fundamentals</h2>
           <p class="offering-desc">Hand-stitch your first small project.</p>
           <div class="offering-footer">
-            <p class="offering-price">120 SAR</p>
+            <p class="offering-price"><data value="120">120 SAR</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
         </li>
         <li class="offering-card">
-          <img src="images/capsule-wardrobe-planning.jpeg" alt="Capsule Wardrobe Planning">
-          <h2>Capsule Wardrobe Planning</h2>
+          <img src="images/capsule-wardrobe-planning.jpeg" alt="Capsule wardrobe planning">
+          <h2>Capsule wardrobe planning</h2>
           <p class="offering-desc">Build ten outfits from ten pieces.</p>
           <div class="offering-footer">
-            <p class="offering-price">0 SAR (free)</p>
+            <p class="offering-price"><data value="0">0 SAR (free)</data></p>
             <a class="btn btn-light" href="request-to-join.html">Request to join</a>
             <button class="bookmark-btn" type="button"><img src="images/bookmark.svg" alt="Save" width="20" height="20"></button>
           </div>
